@@ -1,24 +1,8 @@
 @import "bootstrap/scss/bootstrap-grid";
 
-.row + .row {
-  margin-top: 16px;
-}
-
-.row > .col,
-.row > [class^=col-] {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  background-color: rgba(86, 61, 124, .15);
-  border: 1px solid rgba(86, 61, 124, .2);
-}
-
-
-/* ====================================
+//* ====================================
 // css variables
-// ==================================== */
-
-:root {
-}
+// ==================================== */:
 
 /* ====================================
 // reset rules
@@ -57,3 +41,373 @@ video {
 /* ====================================
 // base rules
 // ==================================== */
+
+@media (min-width: 610px) {
+  .separation,
+  .burger-menu,
+  .navigation {
+    display: none;
+  }
+}
+
+@media (max-width: 610px) {
+  .horizontal-nav {
+    display: none;
+  }
+}
+
+@media (max-width: 610px) {
+  div .introduction-title {
+    padding: 60px 50px;
+  }
+}
+
+@media (max-width: 610px) {
+  .main-background-introduction p,
+  .introduction-cat {
+    margin: 0 25px;
+  }
+}
+
+@media (max-width: 610px) {
+  header h1 {
+    font-size: 40px;
+    position: relative;
+    top: 85px;
+  }
+}
+
+@media (max-width: 610px) {
+  footer h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 610px) {
+  header .logo-visual {
+    position: relative;
+    top: 70px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .img-cat {
+    width: 350px;
+  }
+}
+
+html {
+  background-color: #f7f4f3;
+}
+
+.logo {
+  max-width: 130px;
+  margin: 5px 40px;
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #f7f4f3;
+  -webkit-box-shadow: 5px 4px 37px -28px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 5px 4px 37px -28px rgba(0, 0, 0, 0.4);
+  box-shadow: 5px 4px 37px -28px rgba(0, 0, 0, 0.4);
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+header a {
+  font-family: "Balsamiq Sans", cursive;
+  text-decoration: none;
+  color: #533e36;
+  margin: 25px 30px 0 0;
+}
+
+.burger {
+  font-size: 30px;
+  position: relative;
+  top: -2px;
+  left: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 10px;
+}
+
+.burger-menu {
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.4s;
+}
+
+.navigation {
+  width: 200px;
+  padding: 10px 20px;
+  opacity: 0;
+  transition: opacity 0.4s;
+  font-size: 20px;
+  text-align: end;
+  position: absolute;
+  top: -400px;
+  z-index: 1;
+}
+
+.navigation.is-open {
+  opacity: 1;
+  position: relative;
+  top: 2px;
+}
+
+.header-background {
+  background-image: url(file:///Users/alyssa/Desktop/Sites/IMD21_Catfe_Alyssa/src/img/img-header.webp);
+  background-size: cover;
+  background-position: center top;
+  max-width: none;
+  -webkit-box-shadow: 0px 18px 18px -17px rgba(0, 0, 0, 0.51);
+  -moz-box-shadow: 0px 18px 18px -17px rgba(0, 0, 0, 0.51);
+  box-shadow: 0px 18px 18px -17px rgba(0, 0, 0, 0.51);
+}
+
+.logo-visual {
+  padding-bottom: 22px;
+  max-width: 140px;
+}
+
+h1 {
+  font-family: museo-sans, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+header h1 {
+  color: #f7f4f3;
+  letter-spacing: 1.53px;
+  text-align: center;
+  text-shadow: 0px 2px 40px #000000;
+  white-space: nowrap;
+}
+
+.introduction-title {
+  padding: 115px 40px 85px;
+}
+
+.main-background-introduction {
+  background-color: #533e36;
+}
+
+.main-background-introduction p {
+  font-family: "Balsamiq Sans", cursive;
+  font-size: 25px;
+  color: #f7f4f3;
+  text-align: center;
+  line-height: 30px;
+  padding: 55px 20px;
+}
+
+.menu {
+  color: #533e36;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.description-coffee {
+  display: flex;
+  flex-direction: column;
+  color: #533e36;
+  margin: 25px 0;
+}
+
+.description-coffee-title {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 315px;
+}
+
+.description-coffee h2 {
+  font-family: museo-sans, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 25px;
+}
+
+.description-coffee .price {
+  font-family: "Balsamiq Sans", cursive;
+  font-size: 23px;
+}
+
+.description-coffee .description {
+  font-family: "Balsamiq Sans", cursive;
+  font-size: 20px;
+  color: #533e36de;
+}
+
+.price {
+  padding: 4px 0 0 25px;
+  white-space: nowrap;
+}
+
+.description {
+  max-width: 310px;
+  padding-top: 15px;
+}
+
+hr {
+  color: #533e36;
+  border-radius: 2px;
+  border: solid 1.5px;
+  margin: 0 180px;
+}
+
+.coffee-menu {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  padding: 60px 0 45px 0;
+}
+
+.button-reservation {
+  text-decoration: none;
+  font-family: MuseoSans-700;
+  font-size: 22px;
+  color: #533e36;
+  text-align: center;
+  padding: 5px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border: 1.5px solid #533e3673;
+  max-width: 260px;
+  padding: 5px 30px;
+}
+
+.button p {
+  padding: 8px 15px;
+  text-transform: uppercase;
+}
+
+.description-cat img {
+  max-width: 390px;
+}
+
+.section-cat {
+  background-color: #c9a386;
+}
+
+.section-cat h1 {
+  color: #f7f4f3;
+  letter-spacing: 1.53px;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.introduction-cat {
+  font-family: "Balsamiq Sans", cursive;
+  font-size: 25px;
+  color: #f7f4f3;
+  text-align: center;
+  line-height: 30px;
+  padding: 55px 20px;
+}
+
+.description-cat p {
+  max-width: 355px;
+  text-align: center;
+  font-family: "Balsamiq Sans", cursive;
+  font-size: 20px;
+  color: #f7f4f3;
+  padding: 20px 0;
+}
+
+h3 {
+  font-family: MuseoSans-900;
+  font-size: 45px;
+  color: #f7f4f3;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  top: 29px;
+}
+
+.section-cat-button {
+  border: 1.5px solid #f7f4f3a0;
+  color: #f7f4f3;
+}
+
+.description-cat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer {
+  background-color: #533e36;
+  background-image: url(file:///Users/alyssa/Desktop/Sites/IMD21_Catfe_Alyssa/src/img/pattern-cat.webp);
+  background-size: 1000px;
+}
+
+.credits-section {
+  background-color: #f7f4f3;
+}
+
+footer h1 {
+  color: #f7f4f3;
+  padding: 55px 0 25px;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  text-align: center;
+  font-family: "Balsamiq Sans", cursive;
+  font-size: 16px;
+  color: #f7f4f3;
+  text-align: center;
+}
+
+.footer-top {
+  display: flex;
+  flex-direction: column;
+}
+
+footer nav {
+  display: flex;
+  flex-direction: row;
+  padding: 15px 0 45px;
+  justify-content: center;
+  align-items: center;
+}
+
+footer nav img {
+  width: 52px;
+  margin: 0 15px;
+}
+
+.credits {
+  font-family: roboto;
+  font-weight: 300;
+  font-size: 16px;
+  color: #533e36;
+  letter-spacing: 0;
+  text-align: center;
+}
