@@ -98,6 +98,7 @@ video {
 
 html {
   background-color: #f7f4f3;
+  scroll-behavior: smooth;
 }
 
 .logo {
@@ -168,10 +169,10 @@ header a {
 }
 
 .header-background {
-  background-image: url(file:///Users/alyssa/Desktop/Sites/IMD21_Catfe_Alyssa/src/img/img-header.webp);
-  background-size: cover;
+  background-image: url(../img/img-header.webp);
   background-position: center top;
   max-width: none;
+  background-size: cover;
   -webkit-box-shadow: 0px 18px 18px -17px rgba(0, 0, 0, 0.51);
   -moz-box-shadow: 0px 18px 18px -17px rgba(0, 0, 0, 0.51);
   box-shadow: 0px 18px 18px -17px rgba(0, 0, 0, 0.51);
@@ -212,7 +213,7 @@ header h1 {
   color: #f7f4f3;
   text-align: center;
   line-height: 30px;
-  padding: 55px 20px;
+  padding: 55px 40px;
 }
 
 .menu {
@@ -271,6 +272,7 @@ hr {
 
 .coffee-button {
   border: 1.5px solid #533e3673;
+  max-width: 260px;
 }
 
 .button-container {
@@ -285,14 +287,16 @@ hr {
   font-size: 22px;
   color: #533e36;
   text-align: center;
-  padding: 5px;
+}
+
+.section-coffee-button {
+  border: #533e3667 1.5px solid;
 }
 
 .button-reservation .button {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 5px;
   max-width: 260px;
   padding: 5px 30px;
 }
@@ -323,7 +327,7 @@ hr {
   color: #f7f4f3;
   text-align: center;
   line-height: 30px;
-  padding: 55px 20px;
+  padding: 55px 40px;
 }
 
 .description-cat p {
@@ -358,7 +362,7 @@ h3 {
 
 footer {
   background-color: #533e36;
-  background-image: url(file:///Users/alyssa/Desktop/Sites/IMD21_Catfe_Alyssa/src/img/pattern-cat.webp);
+  background-image: url(../img/pattern-cat.webp);
   background-size: 1000px;
 }
 

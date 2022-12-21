@@ -26,14 +26,16 @@
         <div class="row">
           <div class="top">
             <div class="col-4">
-              <img src="img/Logo-Catfe.webp" alt="Logo Catfé" class="logo" />
+              <a href="#top">
+                <img src="img/Logo-Catfe.webp" alt="Logo Catfé" class="logo" />
+              </a>
             </div>
             <div class="col-8">
               <nav class="horizontal-nav">
-                <a href="" class="nav">menu</a>
-                <a href="" class="nav">réserver</a>
-                <a href="" class="nav">chats</a>
-                <a href="" class="nav">contacts</a>
+                <a href="#menu" class="nav">menu</a>
+                <a href="#reservation" class="nav">réserver</a>
+                <a href="#cat-menu" class="nav">chats</a>
+                <a href="#contact" class="nav">contacts</a>
               </nav>
               <div class="burger">
                 <div class="burger-menu">
@@ -43,10 +45,10 @@
                 </div>
                 <nav class="navigation">
                   <ul>
-                    <a href="#">Menu</a>
-                    <a href="#">Réserver</a>
-                    <a href="#">Chats</a>
-                    <a href="#">Contacts</a>
+                    <a href="#menu">Menu</a>
+                    <a href="#reservation">Réserver</a>
+                    <a href="#cat-menu">Chats</a>
+                    <a href="#contact">Contacts</a>
                   </ul>
                 </nav>
               </div>
@@ -57,7 +59,7 @@
       <div class="header-background">
         <div class="container">
           <div class="row">
-            <div class="introduction-title">
+            <div id="top" class="introduction-title">
               <div class="col-4 offset-4 col-lg-2 offset-lg-5">
                 <img
                   src="img/Logo-catfe-visual.webp"
@@ -91,8 +93,8 @@
       </div>
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-8 offset-1">
-            <h1 class="menu">nos cafés</h1>
+          <div class="col-8">
+            <h1 id="menu" class="menu">nos cafés</h1>
           </div>
         </div>
       </div>
@@ -216,9 +218,9 @@
         </div>
       </div>
       <div class="container">
-        <div class="row">
-          <div class="col-8 offset-2 col-lg-4 offset-lg-4">
-            <div class="button-container coffee-button">
+        <div class="row justify-content-center">
+          <div class="col-8 offset-md-0 col-lg-4">
+            <div id="reservation" class="button-container">
               <a href="" class="button-reservation">
                 <div class="button section-coffee-button">
                   <p>réserver</p>
@@ -231,9 +233,9 @@
       </div>
       <div class="section-cat">
         <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <h1 class="cats-presentation">nos chats</h1>
+          <div class="row justify-content-center">
+            <div class="col-8">
+              <h1 id="cat-menu" class="cats-presentation">nos chats</h1>
             </div>
             <div class="col-12 col-xl-10 offset-xl-2">
               <p class="introduction-cat">
@@ -315,8 +317,8 @@
                 </p>
               </article>
             </div>
-            <div class="col-8 offset-2 col-lg-4 offset-lg-4">
-              <div class="button-container">
+            <div class="col-8 offset-md-0 col-lg-4">
+              <div id="reservation" class="button-container">
                 <a href="" class="button-reservation">
                   <div class="button section-cat-button">
                     <p>réserver</p>
@@ -334,7 +336,7 @@
         <div class="row">
           <div class="footer-top">
             <div class="col-12">
-              <h1>où nous trouver</h1>
+              <h1 id="contact">où nous trouver</h1>
             </div>
             <div class="col-8 offset-2 col-lg-4 offset-lg-4">
               <a href="" class="adress"
