@@ -43,7 +43,7 @@ video {
 // ==================================== */
 
 @media (min-width: 610px) {
-  .separation,
+  hr,
   .burger-menu,
   .navigation {
     display: none;
@@ -218,68 +218,65 @@ header h1 {
 .menu {
   color: #533e36;
   text-align: center;
-  padding: 50px 0;
+  padding-top: 50px;
 }
 
-.description-coffee {
-  display: flex;
-  flex-direction: column;
-  color: #533e36;
-  margin: 25px 0;
-}
-
-.description-coffee-title {
+.menu-top-container {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
   justify-content: space-between;
-  width: 315px;
+  align-items: center;
 }
 
-.description-coffee h2 {
-  font-family: museo-sans, sans-serif;
-  font-weight: 700;
-  font-style: normal;
+.menu-coffee h2 {
+  font-family: MuseoSans-700;
   font-size: 25px;
-}
-
-.description-coffee .price {
-  font-family: "Balsamiq Sans", cursive;
-  font-size: 23px;
-}
-
-.description-coffee .description {
-  font-family: "Balsamiq Sans", cursive;
-  font-size: 20px;
-  color: #533e36de;
+  color: #533e36;
 }
 
 .price {
   padding: 4px 0 0 25px;
   white-space: nowrap;
+  font-family: "Balsamiq Sans", cursive;
+  font-size: 22px;
+  color: #533e36de;
 }
 
-.description {
-  max-width: 310px;
-  padding-top: 15px;
+.menu-coffee i {
+  font-size: 16px;
+  color: #533e36de;
+  padding-top: 10px;
+}
+
+.menu-coffee {
+  font-family: "Balsamiq Sans", cursive;
+  font-size: 16px;
+  color: #533e36de;
+  padding-top: 45px;
+  display: flex;
+  flex-direction: column;
 }
 
 hr {
-  color: #533e36;
-  border-radius: 2px;
-  border: solid 1.5px;
-  margin: 0 180px;
+  border: #533e36 1.5px solid;
+  border-radius: 50px;
+  margin-top: 45px;
 }
 
-.coffee-menu {
-  display: flex;
-  flex-wrap: wrap;
+.coffee-button p {
+  font-family: MuseoSans-700;
+  font-size: 22px;
+  color: #533e36;
+}
+
+.coffee-button {
+  border: 1.5px solid #533e3673;
 }
 
 .button-container {
   display: flex;
   justify-content: center;
-  padding: 60px 0 45px 0;
+  margin: 60px 0 45px 0;
 }
 
 .button-reservation {
@@ -291,12 +288,11 @@ hr {
   padding: 5px;
 }
 
-.button {
+.button-reservation .button {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 5px;
-  border: 1.5px solid #533e3673;
   max-width: 260px;
   padding: 5px 30px;
 }

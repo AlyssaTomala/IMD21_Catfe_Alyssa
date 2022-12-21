@@ -1,6 +1,7 @@
-var burger = document.querySelector(".burger");
+var burger = document.querySelector(".burger-menu");
 var navigation = document.querySelector(".navigation");
-var openNavigation = function () {
+var openNavigation = function (event) {
+  event.preventDefault();
   navigation.classList.toggle("is-open");
   burger.classList.toggle("is-active");
 };
