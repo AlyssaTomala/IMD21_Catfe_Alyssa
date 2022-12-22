@@ -77,6 +77,14 @@ video {
   }
 }
 
+@media (max-width: 400px) {
+  header h1 {
+    font-size: 38px;
+    position: relative;
+    top: 100px;
+  }
+}
+
 @media (max-width: 610px) {
   footer h1 {
     font-size: 40px;
@@ -90,9 +98,24 @@ video {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (max-width: 410px) {
+  header .logo-visual {
+    position: relative;
+    top: 70px;
+    right: 35px;
+  }
+}
+
+@media (min-width: 410px) and (max-width: 1023px) {
   .img-cat {
     width: 350px;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 410px) {
+  .img-cat,
+  .description-cat p {
+    width: 300px;
   }
 }
 
@@ -196,7 +219,6 @@ header h1 {
   letter-spacing: 1.53px;
   text-align: center;
   text-shadow: 0px 2px 40px #000000;
-  white-space: nowrap;
 }
 
 .introduction-title {
@@ -230,7 +252,8 @@ header h1 {
 }
 
 .menu-coffee h2 {
-  font-family: MuseoSans-700;
+  font-family: museo-sans, sans-serif;
+  font-weight: 700;
   font-size: 25px;
   color: #533e36;
 }
@@ -258,6 +281,10 @@ header h1 {
   flex-direction: column;
 }
 
+.menu-coffee p {
+  padding-top: 10px;
+}
+
 hr {
   border: #533e36 1.5px solid;
   border-radius: 50px;
@@ -265,7 +292,8 @@ hr {
 }
 
 .coffee-button p {
-  font-family: MuseoSans-700;
+  font-family: museo-sans, sans-serif;
+  font-weight: 700;
   font-size: 22px;
   color: #533e36;
 }
@@ -283,7 +311,8 @@ hr {
 
 .button-reservation {
   text-decoration: none;
-  font-family: MuseoSans-700;
+  font-family: museo-sans, sans-serif;
+  font-weight: 700;
   font-size: 22px;
   color: #533e36;
   text-align: center;
@@ -340,7 +369,8 @@ hr {
 }
 
 h3 {
-  font-family: MuseoSans-900;
+  font-family: museo-sans, sans-serif;
+  font-weight: 900;
   font-size: 45px;
   color: #f7f4f3;
   text-align: center;
